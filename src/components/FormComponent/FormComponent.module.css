@@ -3,6 +3,7 @@
   font-family: 'ABeeZee';
   src: url('/fonts/ABeeZee-Regular.ttf') format('truetype');
 }
+
 .formContainer {
   width: 1330px;
   height: 656px;
@@ -17,74 +18,72 @@
   align-items: center;
 }
 
-.submitTitle {
-  color: #840000;
-  font-size: 24px;
-  width: 81px;
-  height: 30px;
-  font-family: 'ABeeZee', sans-serif;
-  font-weight: 700;
-  margin-bottom: 4%;
+@font-face {
+  font-family: 'ABeeZee';
+  src: url('/fonts/ABeeZee-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.inputContainer {
-  width: 538px;
-  height: 56px;
+.userListContainer {
+  padding: 20px;
+  font-family: 'ABeeZee', Arial, sans-serif;
+  background-color: #ffffff;
   border-radius: 8px;
-  margin-bottom: 2%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.inputWrapper {
-  width: 100%;
-  height: 100%;
-  background: white;
-  border-radius: 8px;
-  border: 1px solid #CDCDCD;
-  padding: 12px;
-}
-
-.inputField {
-  width: 100%;
-  height: 100%;
-  border: none;
-  outline: none;
-  font-size: 16px;
-  font-family: 'Poppins', sans-serif;
-  padding: 8px;
+.userListContainer h1 {
   color: #333;
-  background-color: transparent;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.inputField::placeholder {
-  color: #C3C3C3;
+.searchInput {
+  margin-bottom: 20px;
+  padding: 15px;
+  width: 500px;
+  max-width: 100%;
+  border-radius: 25px;
+  border: 1.5px solid #b3b1b1;
+  background-color: white;
+  display: block;
+  margin-left: auto;
+  color: black;
+  margin-right: auto;
+  box-sizing: border-box;
 }
 
-.descriptionContainer {
-  width: 538px;
-  height: 173px;
-  margin-bottom: 4%;
-  border-radius: 8px;
-}
-
-.descriptionContainer textarea.inputField {
-  height: 100%;
-  resize: none;
-}
-
-.submitButton {
-  width: 538px;
-  height: 54px;
-  background: #980000;
+.userRow {
   display: flex;
-  border-radius: 11.94px;
+  flex-wrap: wrap;
+  gap: 30px;
   justify-content: center;
-  align-items: center;
-  cursor: pointer;
 }
 
-.submitButtonText {
-  color: white;
+.userCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 220px;
   font-size: 16px;
-  font-family: 'ABeeZee', sans-serif;
-  font-weight: 700;
+  color: #555;
+  text-align: center;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.userCard:hover {
+  background-color: #f1f1f1;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }

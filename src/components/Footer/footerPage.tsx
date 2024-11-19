@@ -47,7 +47,7 @@ const Footer = () => {
             </div>
           </div>
           <div className={styles.contactEmail}>
-              <a href="mailto:contact@xtellig pvt ltd.com">contact@xtellig pvt ltd.com</a>
+              <a href="mailto:contact@xtelligpvtltd.com">contact@xtelligpvtltd.com</a>
            </div>
         </div>
       </div>

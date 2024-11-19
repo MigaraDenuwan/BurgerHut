@@ -1,91 +1,50 @@
-"use client"; 
+"use client";
 
-import React, { useState } from 'react';
-import styles from './FormComponent.module.css'; 
+import styles from './FormComponent.module.css';
+import { UserProvider, useUser } from "../../context/UserContext";
 
-const FormComponent: React.FC = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    description: ''
-  });
+type User = {
+  id: number;
+  avatar: string;
+  first_name: string;
+  last_name: string;
+};
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log(formData);
-  };
+const UserList = () => {
+  const { filteredUsers, searchQuery, setSearchQuery } = useUser();
 
   return (
-    <form className={styles.formContainer} onSubmit={handleSubmit}>
-      <div className={styles.submitTitle}>Submit</div>
-
-      <div className={styles.inputContainer}>
-        <div className={styles.inputWrapper}>
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            className={styles.inputField}
-            placeholder="Name"
-            required
-          />
-        </div>
+    <div className={styles.userListContainer}>
+      <h1>User List</h1>
+      <input
+        type="text"
+        placeholder="Search users..."
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
+        className={styles.searchInput}
+      />
+      <div className={styles.userRow}>
+        {filteredUsers.map((user: User) => (
+          <div key={user.id} className={styles.userCard}>
+            <img
+              src={user.avatar}
+              alt={`${user.first_name} ${user.last_name}`}
+              className={styles.avatar}
+            />
+            <span>{user.first_name} {user.last_name}</span>
+          </div>
+        ))}
       </div>
+    </div>
+  );
+};
 
-      <div className={styles.inputContainer}>
-        <div className={styles.inputWrapper}>
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            className={styles.inputField}
-            placeholder="Email"
-            required
-          />
-        </div>
-      </div>
-
-      <div className={styles.inputContainer}>
-        <div className={styles.inputWrapper}>
-          <input
-            type="tel"
-            name="phone"
-            value={formData.phone}
-            onChange={handleChange}
-            className={styles.inputField}
-            placeholder="Phone Number"
-            required
-          />
-        </div>
-      </div>
-
-      <div className={styles.descriptionContainer}>
-        <div className={styles.inputWrapper}>
-          <textarea
-            name="description"
-            value={formData.description}
-            onChange={handleChange}
-            className={styles.inputField}
-            placeholder="Description"
-            required
-          />
-        </div>
-      </div>
-
-      <button type="submit" className={styles.submitButton}>
-        <div className={styles.submitButtonText}>Submit</div>
-      </button>
+const FormComponent = () => {
+  return (
+    <form className={styles.formContainer}>
+      <UserProvider>
+        <UserList />
+      </UserProvider>
     </form>
   );
 };

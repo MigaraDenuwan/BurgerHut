@@ -1,11 +1,11 @@
-import Dashbord from './components/DashBord/Dashbord';
-import Title from './components/Title/Title';
-import Slideshow from './components/SlideShow/slideShow';
-import FormComponent from './components/FormComponent/FormComponent';
-import ContactUs from './components/Contact/ContactUs';
-import Footer from './components/Footer/footerPage';
-import BodyPage from './components/BodyPage/BodyPage';
 import styles from './App.module.css';
+import BodyPage from './components/BodyPage/BodyPage';
+import ContactUs from './components/Contact/ContactUs';
+import Dashbord from './components/DashBord/Dashbord';
+import Footer from './components/Footer/footerPage';
+import FormComponent from './components/FormComponent/FormComponent';
+import Slideshow from './components/SlideShow/slideShow';
+import Title from './components/Title/Title';
 
 const App = () => {
   return (
@@ -35,4 +35,4 @@ const App = () => {
   );
 }
 
-export default App
+export default App;
