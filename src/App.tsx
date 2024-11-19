@@ -1,35 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Dashbord from './components/DashBord/Dashbord';
+import Title from './components/Title/Title';
+import Slideshow from './components/SlideShow/slideShow';
+import FormComponent from './components/FormComponent/FormComponent';
+import ContactUs from './components/Contact/ContactUs';
+import Footer from './components/Footer/footerPage';
+import BodyPage from './components/BodyPage/BodyPage';
+import styles from './App.module.css';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <Dashbord />
+      <div className={styles.titleContainer}>
+        <Title />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      <div className={styles.phone}>
+        <Slideshow />
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div className={styles.form}>
+        <FormComponent />
+      </div>
+      <div className={styles.contact}>
+        <ContactUs />
+      </div>
+      <div className={styles.subPlans}>
+        <BodyPage />
+      </div>
+      <div className={styles.footer}>
+        <Footer />
+      </div>
+      <main></main>
+      <div style={{ height: '300vh' }}></div>
     </>
-  )
+  );
 }
 
 export default App

@@ -1,0 +1,48 @@
+.titleContainer {
+  position: absolute; 
+  top: 20%; 
+  left: 12.5%; 
+  z-index: 2; 
+}
+.phone {
+  position: absolute; 
+  top: 15%; 
+  right: 12%; 
+  z-index: 2; 
+}
+.form {
+  position: absolute;
+  top: 118%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact {
+  position: absolute; 
+  top: 200%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+.subPlans {
+  position: absolute;
+  top: 300%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer {
+  position: absolute; 
+  top: 450%; 
+  z-index: 2; 
+}

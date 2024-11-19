@@ -1,0 +1,157 @@
+@font-face {
+  font-family: 'Roobert PRO Light';
+  src: url('/fonts/RoobertPRO-Light.ttf') format('truetype'); 
+  font-style: normal;
+  font-family: 'Roobert';
+  src: url('/fonts/RoobertPRO-Medium.ttf') format('truetype');
+  font-family: 'outfitL';
+  src: url('/fonts/Outfit-Light.ttf') format('truetype');
+  font-family: 'outfitS';
+  src: url('/fonts/Outfit-SemiBold.ttf') format('truetype');
+}
+.footerContainer {
+  width: 100vw; 
+  height: 173px;
+  position: relative;
+}
+
+.footerBackground {
+  width: 100vw; 
+  height: 173px;
+  background: #D9D9D9;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.footerContent {
+  position: absolute;
+  left: 112px;
+  top: 47px;
+  width: 421.38px;
+  height: 78.34px;
+}
+
+.logoContainer {
+  position: absolute;
+  width: 52.60px;
+  height: 74.85px;
+  left: -40px;
+  top: 3.48px;
+}
+
+.logoImage {
+  width: 74.85px;
+  height: 74.85px;
+  position: absolute;
+}
+
+.logoOverlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.companyInfo {
+  width:100%;
+  height: 75px;
+  position: absolute;
+  left: 10%;
+  top: 0;
+}
+
+.companyName {
+  color: black;
+  font-size: 25.65px;
+  font-family: 'outfitS', sans-serif;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+.rightsReserved {
+  color: black;
+  font-size: 17.80px;
+  font-family: 'Roobert', sans-serif;
+  font-weight: 500;
+  position: absolute;
+  top: 40px;
+  left: 0;
+}
+.policyContainer {
+  display: flex;
+  align-items: center; 
+  gap: 10px;
+  width: auto; 
+  height: auto; 
+  position: absolute;
+  font-family: 'Roobert PRO Light', sans-serif;
+  top: 66px;
+  left: 0;
+}
+
+.policy {
+  color: black;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.dot {
+  width: 3.28px;
+  height: 3.28px;
+  background: black;
+  border-radius: 50%; 
+}
+
+
+.contactContainer {
+  width: 239px;
+  height: 68.36px;
+  position: absolute;
+  right: 8%;
+  top: 52px;
+}
+.contactIcons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 25px;
+  position: absolute;
+  left: 6px;
+  top: 28.37px;
+}
+
+.iconContainer a {
+  text-decoration: none;
+}
+
+.iconImage {
+  width: 33.30px;
+  height: 33.30px;
+  cursor: pointer; 
+}
+
+.iconOverlay {
+  width: 33.30px;
+  height: 33.30px;
+  position: absolute;
+}
+
+.contactEmail {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: black;
+  font-size: 18px;
+  font-family: 'outfitL', sans-serif;
+  font-weight: 300;
+}
+.contactEmail a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'outfitL', sans-serif;
+  font-weight: 300;
+}
+
+.contactEmail a:hover {
+  text-decoration: underline; 
+}

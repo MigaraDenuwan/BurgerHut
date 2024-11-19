@@ -1,0 +1,130 @@
+@font-face {
+  font-family: 'Roobert PRO';
+  src: url('/fonts/RoobertPRO-Regular.ttf') format('truetype'); 
+  font-style: normal; 
+  font-family: 'ABeeZee';
+  src: url('/fonts/ABeeZee-Regular.ttf') format('truetype');
+}
+.textContainer {
+  width: 722px;
+  height: 382px;
+}
+
+.title {
+  left: 20px; 
+  top: 0px; 
+  position: absolute; 
+  color: white; 
+  font-size: 38.35px; 
+  font-family: 'ABeeZee', sans-serif; 
+  font-weight: 700; 
+  word-wrap: break-word;
+}
+
+.mainTitle {
+    width: 722px;
+    height: 48px;
+    font-size: 38.35px;
+    font-family: 'Roobert PRO', sans-serif;
+    word-wrap: break-word;
+}
+
+.subTitle {
+    width: 722px;
+    height: 48px;
+    font-size: 38.35px;
+    font-family: 'Roobert PRO', sans-serif;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.stepsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px; /* Adjust as needed */
+  margin-top: 17%;
+}
+
+.step {
+  width: 346px;
+  height: 118px;
+  border-radius: 13px;
+  border: 1px solid white;
+  padding-left: 34px;
+  padding-right: 34px;
+  padding-top: 17.46px;
+  padding-bottom: 17.46px;
+}
+
+.stepTitle {
+  font-size: 14.68px;
+  font-family: 'Roobert PRO', sans-serif;
+  font-weight: 700;
+  height: 19px;
+  width: 60px;
+}
+
+.stepDescription {
+  font-size: 14.68px;
+  font-family: 'Roobert PRO', sans-serif;
+  font-weight: 400;
+  margin-top: 0; 
+}
+.line {
+    width: 0; 
+    height: 25px; 
+    position: absolute; 
+    border: 0.5px solid white; 
+    top: 1px; 
+  }
+  
+  .line::before,
+  .line::after {
+    content: ''; 
+    width: 6px;
+    height: 6px; 
+    background-color: white; 
+    border-radius: 50%; 
+    position: absolute; 
+  }
+  
+  .line::before {
+    top: -2px; 
+    left: -3px; 
+  }
+  
+  .line::after {
+    bottom: -2px;
+    left: -3px; 
+  }
+  
+  .rotatedLine {
+    width: 0;
+    height: 49.58px; 
+    position: absolute; 
+    border: 0.5px solid white;
+    transform: rotate(48.27deg); 
+    transform-origin: 0 0; 
+    top: 1px;
+  }
+  
+  .rotatedLine::before,
+  .rotatedLine::after {
+    content: ''; 
+    width: 6px; 
+    height: 6px; 
+    background-color: white;
+    border-radius: 50%; 
+    position: absolute; 
+  }
+  
+  .rotatedLine::before {
+    top: -3px; 
+    left: -3px; 
+  }
+  
+  .rotatedLine::after {
+    bottom: -3px; 
+    left: -3px; 
+  }
+  

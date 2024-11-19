@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'Sui Generis';
+    src: url('/fonts/sui-generis.otf') format('opentype');
+    font-style: normal;
+    font-weight: 400; 
+}
+
+@font-face {
+    font-family: 'Roobert PRO';
+    src: url('/fonts/RoobertPRO-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+.card {
+    width: 362px;
+    height: 596.5px;
+    border: 0.81px solid #980000;
+    border-radius: 23px;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0px 0px 19.78557777404785px rgba(0, 0, 0, 0.10);
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+}
+
+.qrCode img {
+    width: 62px;
+    height: 62px;
+}
+
+.planTitle {
+    font-size: 58.53px;
+    color: #323232;
+    margin-top: 10px;
+    font-family: 'Sui Generis', sans-serif;
+    font-style: normal;;
+    font-weight: '400'; 
+    word-wrap: 'break-word';
+}
+
+.planSubtitle {
+    font-size: 25.09px;
+    color: #000000;
+    font-family: 'Roobert PRO', sans-serif;
+}
+
+.priceContainer {
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+}
+
+.header {
+    margin-top: 26%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.price {
+    font-size: 58.53px;
+    color: #980000;
+    font-weight: bold;
+    text-align: center;
+}
+
+.description {
+    display: none;
+    color: #000;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.card:hover .description {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 20px);
+}
+
+.card:hover .price {
+    display: block;
+}
+
+.slidingBox {
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    height: 50%;
+    background-color: #ecf8f1;
+    clip-path: polygon(50% 12%, 100% 30%, 100% 100%, 0% 100%, 0% 30%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateX(-50%);
+    bottom: 0;
+    z-index: 1;
+    transition: height 0.3s ease-in-out;
+    border-radius: 19.50px;
+    border: 0.81px solid #980000;
+}
+
+.card:hover .slidingBox {
+    height: 85%;
+}
+
+.card:hover .header {
+    transform: translateY(-90px) scale(0.6);
+}
+
+.card:hover .priceContainer {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.Group34 {
+    width: 300px;
+    height: 332px;
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    left: 18px;
+    color: #500000;
+    font-size: 16px;
+    font-family: 'Roobert PRO', sans-serif;
+    font-weight: 700;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+.description1 {
+    position: absolute;
+    font-family: 'Roobert PRO', sans-serif;
+    word-wrap: break-word;
+    left: 22px;
+    font-size: 13px;
+    width: 100%;
+    color: #500000;
+    text-align: left;
+}
+
+.maskGroup {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: 0;
+}
+
+.image {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

@@ -1,0 +1,110 @@
+@font-face {
+  font-style: normal; 
+  font-family: 'Roobert';
+  src: url('/fonts/RoobertPRO-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-style: normal; 
+  font-family: 'ABeeZee';
+  src: url('/fonts/ABeeZee-Regular.ttf') format('truetype');
+}
+
+.contact-container {
+  width: 470px;
+  height: 331px;
+  display: flex; 
+  margin-top: 200%;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+  margin: 20px auto; 
+  cursor: pointer; 
+}
+
+.contact-card {
+  width: 100%; 
+  height: 100%; 
+  background: white;
+  box-shadow: 0px 4px 14.5px rgba(0, 0, 0, 0.10);
+  border-radius: 30px;
+  border: 1px #980000 solid;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: flex-start; 
+  align-items: center; 
+  padding: 20px; 
+  box-sizing: border-box; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.contact-title {
+  color: #500000;
+  font-size: 38px;
+  font-family: 'ABeeZee', sans-serif;
+  font-weight: 700;
+  word-wrap: break-word;
+  margin-bottom: 8%; 
+}
+
+.contact-icons {
+  position: absolute;
+  width: 284.50px;
+  height: 41.94px;
+  justify-content: center;
+  top: 72%;
+}
+
+.contact-icon {
+  width: 41.50px;
+  height: 41.50px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.contact-info {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 20px; 
+  cursor: pointer; 
+}
+
+.whatsapp-info, .phone-info {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 5px;
+}
+
+.whatsapp-number, .phone-number {
+  color: black;
+  font-size: 20px;
+  font-family: 'Roobert', sans-serif;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+.divider {
+  width: 0; 
+  height: 24px; 
+  border: 1px #A2A2A2 solid; 
+}
+
+.contact-card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.contact-icons a, .whatsapp-info a, .phone-info a {
+  cursor: pointer;
+}
+
+.whatsapp-info a img, .phone-info a img {
+  width: 72px;
+  height: 72px;
+  cursor: pointer;
+  pointer-events: all;
+}
