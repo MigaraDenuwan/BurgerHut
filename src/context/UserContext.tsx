@@ -1,6 +1,5 @@
 import { createContext, useContext, useState, useEffect, ReactNode } from "react";
 
-// Define types for the user data
 interface User {
   id: number;
   first_name: string;
@@ -8,7 +7,6 @@ interface User {
   avatar: string;
 }
 
-// Define the shape of the context
 interface UserContextType {
   users: User[];
   filteredUsers: User[];
@@ -18,7 +16,6 @@ interface UserContextType {
 
 const UserContext = createContext<UserContextType | undefined>(undefined);
 
-// Custom hook to use UserContext
 export const useUser = (): UserContextType => {
   const context = useContext(UserContext);
   if (!context) {
@@ -36,7 +33,6 @@ export const UserProvider = ({ children }: UserProviderProps) => {
   const [filteredUsers, setFilteredUsers] = useState<User[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
 
-  // Fetch user data
   useEffect(() => {
     const fetchUsers = async () => {
       try {
@@ -51,7 +47,6 @@ export const UserProvider = ({ children }: UserProviderProps) => {
     fetchUsers();
   }, []);
 
-  // Filter users based on search query
   useEffect(() => {
     setFilteredUsers(
       users.filter((user) =>
