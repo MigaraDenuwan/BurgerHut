@@ -3,11 +3,13 @@
 import styles from './FormComponent.module.css';
 import { UserProvider, useUser } from "../../context/UserContext";
 
+// Define types for user
 type User = {
   id: number;
   avatar: string;
   first_name: string;
   last_name: string;
+  email?: string; // Made email optional
 };
 
 const UserList = () => {
@@ -31,7 +33,10 @@ const UserList = () => {
               alt={`${user.first_name} ${user.last_name}`}
               className={styles.avatar}
             />
-            <span>{user.first_name} {user.last_name}</span>
+            <div>
+              <span>{user.first_name} {user.last_name}</span>
+              <p className={styles.email}>{user.email || "Email not available"}</p>
+            </div>
           </div>
         ))}
       </div>
