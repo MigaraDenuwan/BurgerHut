@@ -71,39 +71,3 @@
   color: #ffffff;
   font-size: 1rem;
 }
-
-.signInButton {
-  background-color: #ffffff;
-  color: #4f46e5;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  border: none;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.signInButton:hover {
-  background-color: #e0e7ff;
-}
-
-.signOutButton {
-  background-color: #ef4444;
-  color: #ffffff;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  border: none;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.signOutButton:hover {
-  background-color: #b91c1c;
-}
-
-.user {
-  margin-right: 1rem;
-  font-size: 1rem;
-}
-

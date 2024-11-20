@@ -3,13 +3,12 @@
 import styles from './FormComponent.module.css';
 import { UserProvider, useUser } from "../../context/UserContext";
 
-// Define types for user
 type User = {
   id: number;
   avatar: string;
   first_name: string;
   last_name: string;
-  email?: string; // Made email optional
+  email?: string; 
 };
 
 const UserList = () => {
